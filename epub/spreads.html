@@ -32,7 +32,7 @@
     var params = URLSearchParams && new URLSearchParams(document.location.search.substring(1));
     var currentURL = window.location.href;
     //请修改test.com为你自己的AList域名
-    var urlPrefix = "alist.hehouhui.cn/epub/spreads.html?url=";
+    var urlPrefix = "https://alist.hehouhui.cn/epub/spreads.html?url=";
     var url = currentURL.substring(urlPrefix.length);
     var currentSectionIndex = (params && params.get("loc")) ? params.get("loc") : undefined;
     let blob = fetch(url).then((res) => res.blob());
